@@ -31,7 +31,7 @@ class InstagramController extends Controller
             ]
         ]);
 
-        
+
         $photos = json_decode($response->getBody(), true);
 
         return Inertia::render('Events', ['photos' => $photos]);

@@ -7,12 +7,7 @@
             Your browser does not support the video tag.
           </video>
         </div>
-        <div class="carousel-item">
-          <video class="d-block w-100 custom-video"  autoplay="autoplay" muted="muted" loop="loop">
-            <source :src="video_2" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
+       
         <!-- Agrega más elementos .carousel-item según sea necesario para más videos -->
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -37,13 +32,24 @@
   </script>
   
   <style scoped>
+  
+    .carousel-inner {
+      width: 100%;
+      max-height: 78vh; /* Ajusta este valor según tus necesidades */
+    }
+
+    .carousel-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
     .custom-video {
-        height: 95vh; /* Hace que el video ocupe toda la altura de la pantalla */
-        width: 100%; /* Asegura que el video ocupe todo el ancho disponible */
-        object-fit: cover; /* Asegura que el video cubra todo el área del contenedor */
+      width: 100%;
+      height: auto; /* Ajusta automáticamente la altura */
+      object-fit: cover; /* Asegura que el video cubra todo el área del contenedor sin perder proporción */
     }
-    .carousel-inner, .carousel-item {
-        height: 100vh; /* Asegura que los elementos del carrusel también ocupen toda la altura de la pantalla */
-    }
+
   </style>
   

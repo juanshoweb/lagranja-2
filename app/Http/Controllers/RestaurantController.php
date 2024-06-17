@@ -32,6 +32,7 @@ class RestaurantController extends Controller
                 ]
             ]);
 
+
             $data = json_decode($response->getBody()->getContents(), true);
 
             // Filtrar solo las imágenes
