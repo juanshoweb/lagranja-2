@@ -6,7 +6,7 @@
             <i class="fas fa-envelope fa-5x mb-3" style="color: #0d6efd;"></i>
             <h5 class="contact-title">Contacto</h5>
             <p>Correo electrónico: ejemplo@correo.com</p>
-            <p>Teléfono: 123456789</p>
+            <p>Teléfono:  930 13 35 58</p>
           </div>
         </div>
         <div class="col-lg-4 text-center">

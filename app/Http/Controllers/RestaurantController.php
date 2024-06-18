@@ -13,8 +13,11 @@ class RestaurantController extends Controller
     /**
      * Display a listing of the resource.
      */
+
+
     public function index(Request $request)
     {
+
         //$posts = Restaurant::all();
         $limit = env('LIMIT_IMG_PAG_INSTAGRAM'); // Definir límite de resultados por página
         $after = $request->input('after');
